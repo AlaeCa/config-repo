@@ -1,13 +1,18 @@
+
 config:
   global:
-    message: Welcome the gloabl microservie!
-loggine:
-  root: INFO
+    message: Welcome to the global microservice!
+
+logging:
+  level:
+    root: INFO
+
 management:
   endpoints:
     web:
       exposure:
-        include: health, info, refreash
-  endpoints:
+        include: health,info,refresh
+
+  endpoint:
     health:
       show-details: always
