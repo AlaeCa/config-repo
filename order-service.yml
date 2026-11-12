@@ -1,0 +1,13 @@
+global:
+  message: Welcome to order service environment!
+server:
+  port: 8802
+
+spring:
+  url: jdbc:mysql://localhost:3306/ord
+  username: root
+  password: alae-12345
+jpa:
+  hibernate:
+    ddl-auto: update
+  show-sql: true
