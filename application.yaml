@@ -1,0 +1,13 @@
+config:
+  global:
+    message: Welcome the gloabl microservie!
+loggine:
+  root: INFO
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, refreash
+  endpoints:
+    health:
+      show-details: always
