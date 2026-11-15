@@ -1,13 +1,9 @@
-global:
-  message: Welcome to customer service dev environment!
-server:
-  port: 8802
-message: Hello form Dev!
 spring:
-  url: jdbc:mysql://localhost:3306/cust
-  username: root
-  password: alae-12345
-jpa:
-  hibernate:
-    ddl-auto: update
-  show-sql: true
+  application:
+    name: customer-service
+
+  mongodb:
+    uri: mongodb://root:alae-12345@localhost:27018/mydb?authSource=admin
+
+server:
+  port: 8090
